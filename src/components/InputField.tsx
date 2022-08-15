@@ -8,11 +8,6 @@ interface Props {
 }
 
 export const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
-  const submit: (event: React.FormEvent) => unknown = (
-    event: React.FormEvent
-  ) => {
-    event.preventDefault();
-  };
 
   const inputRef = useRef<HTMLInputElement>(null);
 
